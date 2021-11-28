@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTMusic</title>
+    <link href="styles.css" rel="stylesheet" > 
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <nav>
+          <img src="images/wtmusiclogo.jpg" alt="logo" class="logo"> 
+          <ul>
+              <li> <a href="index.htm" top> HOME</a></li>
+              <li> <a href="beats.htm"> Buy Beats</a></li>
+              <li> <a href="services.htm"> Mix/Master</a></li>
+              <li> <a href="promotion.htm"> Get Promoted</a></li>
+          </ul>
+          <img src="images/menu-icon.png" alt="menu" class="menu-icon">
+        </nav>
+    <div class="text-box" id="services">
+        <h1>Mix n Master</h1>
+        <p>Want a proper Mix or Master?</p>
+        <p>Check our services!</p>
+        </div>
+     
+      
+        <div class="container">
+            <form action="wtmusic_service.php">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="email">E-mail</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="email" name="email" placeholder="Your e-mail..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="sname">Song Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="sname" name="songname" placeholder="Your song name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="preference">Mixing Preference</label>
+                </div>
+                <div class="col-75">
+                  <select id="preference" name="preference">
+                    <option value="vocal">Vocal Presence</option>
+                    <option value="acoustic">Chill Acoustic</option>
+                    <option value="loudness">General Loudness</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="message">ANY Additional Info</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+    </body>
+    
+</body>
